@@ -2,11 +2,12 @@ import React from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
-import MobileMenu from "./components/MobileMenu";
 import Navigation from "./components/Navigation";
 import Products from "./components/Products";
 import {BrowserRouter, Route} from "react-router-dom";
 import {MDBContainer} from "mdbreact";
+import PEOB from "./components/PEOB";
+import VF from "./components/VF";
 
 import "./CCF.css";
 import "mdbreact/dist/css/mdb.css";
@@ -29,7 +30,8 @@ const CCF = () => {
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="/products" component={Products} />
-        <Route path="/mobileMenu" component={MobileMenu} />
+        <Route path="/products-PEOB" component={PEOB} />
+        <Route path="/products-VF" component={VF} />
       </MDBContainer>
     </BrowserRouter>
   );
