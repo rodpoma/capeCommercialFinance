@@ -1,7 +1,7 @@
-* {
+/* * {
   max-width: 375px;
   max-height: 812px;
-}
+} */
 
 /* #0b0633 */
 .mobileMenu {
@@ -18,6 +18,17 @@
 }
 .App {
   text-align: center;
+}
+
+.webNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.webNavItem {
+  margin: 0 0.75vw;
 }
 
 .App-logo {
