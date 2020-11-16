@@ -1,5 +1,13 @@
 import React from "react";
-import {MDBAnimation, MDBContainer} from "mdbreact";
+import {
+  MDBAnimation,
+  MDBContainer,
+  MDBCard,
+  MDBCardTitle,
+  MDBCardGroup,
+  MDBCardText,
+  MDBCardBody,
+} from "mdbreact";
 import MediaQuery from "react-responsive";
 
 const About = () => {
@@ -24,7 +32,62 @@ const About = () => {
         </MDBAnimation>
       </MediaQuery>
       {/*Web Broswer */}
-      <MediaQuery minDeviceWidth={1201}>Howdy</MediaQuery>
+      <MediaQuery minDeviceWidth={1201}>
+        <MDBContainer>
+          <h1 className="white-text">About</h1>
+          <p className="white-text">
+            Cape is an Independent Equipment Financing Company, with more than
+            25 years of experience in delivering financing programs for
+            manufacturers and supporting PE Owned and Sponsored businesses with
+            their equipment financing needs.
+          </p>
+        </MDBContainer>
+        <MDBContainer className="mt-5">
+          <h2 className="white-text">Recent Transactions</h2>
+          <MDBCardGroup>
+            <MDBCard>
+              <MDBCardBody>
+                <MDBCardTitle tag="h5">
+                  $6,700,000 for New Machine Tools
+                </MDBCardTitle>
+                <MDBCardText>
+                  <br />
+                  -AeroSpace & Defense Supplier
+                  <br /> -COVID-19 Impacted Financial Performance
+                  <br /> -48 Month $1 buyout lease
+                </MDBCardText>
+              </MDBCardBody>
+            </MDBCard>
+            <MDBCard>
+              <MDBCardBody>
+                <MDBCardTitle tag="h5">
+                  $3,500,000 for New Plastic Injection Molding Machine
+                </MDBCardTitle>
+                <MDBCardText>
+                  <br />
+                  -Recent Start-Up
+                  <br />
+                  -Required additional collateral and personal guaranty
+                  <br /> -36 Month $1 buyout lease
+                </MDBCardText>
+              </MDBCardBody>
+            </MDBCard>
+            <MDBCard>
+              <MDBCardBody>
+                <MDBCardTitle tag="h5">
+                  $2,000,000 for Food Production Equipment
+                </MDBCardTitle>
+                <MDBCardText>
+                  <br />
+                  -Recent Acquisition
+                  <br /> -Debt 6X EBITDA
+                  <br /> -36 Month $1 buyout lease
+                </MDBCardText>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCardGroup>
+        </MDBContainer>
+      </MediaQuery>
     </MDBContainer>
   );
 };
