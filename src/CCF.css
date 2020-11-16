@@ -1,7 +1,7 @@
-/* * {
-  max-width: 375px;
-  max-height: 812px;
-} */
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 
 /* #0b0633 */
 .mobileMenu {
