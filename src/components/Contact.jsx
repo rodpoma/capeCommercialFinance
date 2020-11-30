@@ -11,10 +11,9 @@ import {
 import emailjs from "emailjs-com";
 import swal from "sweetalert";
 
-const Contact = () => {
+const Contact = ({history}) => {
   function sendEmail(e) {
     e.preventDefault();
-
     emailjs
       .sendForm(
         `${process.env.REACT_APP_EMAILJS_SERVICE}`,
@@ -26,6 +25,7 @@ const Contact = () => {
         result => {
           console.log(result.text);
           swal("email sent!");
+          history.push("/");
         },
         error => {
           console.log(error.text);
@@ -33,7 +33,6 @@ const Contact = () => {
         }
       );
   }
-
   return (
     <MDBContainer className="cards">
       <MDBAnimation type="fadeIn" delay=".6s">
