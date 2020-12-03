@@ -11,7 +11,7 @@ import {
 import emailjs from "emailjs-com";
 import swal from "sweetalert";
 
-const Contact = ({history}) => {
+const Contact = () => {
   function sendEmail(e) {
     e.preventDefault();
     emailjs
@@ -25,7 +25,6 @@ const Contact = ({history}) => {
         result => {
           console.log(result.text);
           swal("email sent!");
-          history.push("/");
         },
         error => {
           console.log(error.text);
@@ -36,32 +35,36 @@ const Contact = ({history}) => {
   return (
     <MDBContainer className="cards">
       <MDBAnimation type="fadeIn" delay=".6s">
+        <MDBContainer className="mb-4">
+          <h2 className="white-text">Info</h2>
+          <hr className="hr-light" />
+          <h5 className="white-text mb-3">
+            Phone:
+            <br />
+            <em>+1(917)940-0239</em>
+          </h5>
+          <h5 className="white-text mb-3">
+            E-mail:
+            <br />
+            <em>info@capecf.com</em>
+          </h5>
+          <h5 className="white-text mb-3">
+            Address:
+            <br />
+            <em>
+              Cape Commercial Finance, LLC 1301 Riverplace Blvd, Suite 800
+              Jacksonville, FL32207
+            </em>
+          </h5>
+        </MDBContainer>
+
         <MDBCard>
           <MDBCardBody className="rgba-grey-light">
             <form onSubmit={sendEmail}>
-              <p className="h5 text-center mb-4 black-text">Contact</p>
               <div className="black-text">
-                <MDBInput
-                  label="Name"
-                  name="user_name"
-                  group
-                  type="text"
-                  validate
-                />
-                <MDBInput
-                  label="Email"
-                  name="user_email"
-                  group
-                  type="email"
-                  validate
-                />
-                <MDBInput
-                  label="Subject"
-                  name="subject"
-                  group
-                  type="text"
-                  validate
-                />
+                <MDBInput label="Name" name="user_name" type="text" />
+                <MDBInput label="Email" name="user_email" type="email" />
+                <MDBInput label="Subject" name="subject" type="text" />
                 <MDBInput
                   type="textarea"
                   name="message"
