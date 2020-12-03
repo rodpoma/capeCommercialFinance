@@ -24,11 +24,11 @@ const Contact = () => {
       .then(
         result => {
           console.log(result.text);
-          swal("email sent!");
+          swal("Email sent!");
         },
         error => {
           console.log(error.text);
-          swal("something went wrong!");
+          swal("Something went wrong!");
         }
       );
   }
