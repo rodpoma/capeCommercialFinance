@@ -35,27 +35,27 @@ const Contact = () => {
   return (
     <MDBContainer className="cards">
       <MDBAnimation type="fadeIn" delay=".6s">
-        <MDBContainer className="mb-4">
+        <MDBContainer>
           <h2 className="white-text">Info</h2>
           <hr className="hr-light" />
-          <h5 className="white-text mb-3">
+          <h6 className="white-text mb-2">
             Phone:
             <br />
             <em>+1(917)940-0239</em>
-          </h5>
-          <h5 className="white-text mb-3">
+          </h6>
+          <h6 className="white-text mb-2">
             E-mail:
             <br />
             <em>info@capecf.com</em>
-          </h5>
-          <h5 className="white-text mb-3">
+          </h6>
+          <h6 className="white-text mb-3">
             Address:
             <br />
             <em>
               Cape Commercial Finance, LLC 1301 Riverplace Blvd, Suite 800
               Jacksonville, FL32207
             </em>
-          </h5>
+          </h6>
         </MDBContainer>
 
         <MDBCard>
