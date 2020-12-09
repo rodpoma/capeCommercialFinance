@@ -11,6 +11,20 @@
   align-items: center;
   margin-top: 5vh;
 }
+.productsTab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.productCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardImage {
+  height: 220px;
+  width: 300px;
+}
 .cards {
   position: fixed;
   top: 52.5%;
