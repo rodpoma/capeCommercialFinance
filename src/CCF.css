@@ -21,9 +21,23 @@
   justify-content: center;
   align-items: center;
 }
+.about {
+  color: white;
+  font-size: 1.5vh;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
 .cardImage {
   height: 220px;
   width: 300px;
+  object-fit: cover;
+}
+.sepCards {
+  display: flex;
+  flex-direction: row;
+}
+.individualCards {
+  margin: 10px;
 }
 .cards {
   position: fixed;
@@ -35,6 +49,7 @@
 .hpImage {
   height: 300px;
   width: auto;
+  object-fit: cover;
 }
 .App {
   text-align: center;

@@ -3,6 +3,10 @@ import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Navigation from "./components/Navigation";
 import Products from "./components/Products";
+import CB from "./components/MobileProductPages/commercialBusinessesMobile";
+import EF from "./components/MobileProductPages/energyFinanceMobile";
+import RT from "./components/MobileProductPages/recentTransactions";
+import VF from "./components/MobileProductPages/vendorFinanceMobile";
 import {BrowserRouter, Route} from "react-router-dom";
 import {MDBContainer} from "mdbreact";
 
@@ -27,6 +31,10 @@ const CCF = () => {
         <Route path="/" exact component={Home} />
         <Route path="/contact" component={Contact} />
         <Route path="/products" component={Products} />
+        <Route path="/commercialBusiness" component={CB} />
+        <Route path="/energyFinance" component={EF} />
+        <Route path="/recentTransactions" component={RT} />
+        <Route path="/vendorFinance" component={VF} />
       </MDBContainer>
     </BrowserRouter>
   );

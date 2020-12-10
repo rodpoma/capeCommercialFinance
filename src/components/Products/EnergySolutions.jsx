@@ -17,7 +17,7 @@ const EnergySolutions = () => {
         <MDBCardGroup className="mt-1">
           <MDBCard>
             <MDBCardImage
-              src="https://cdn.pixabay.com/photo/2018/09/05/23/16/electric-cables-3657404_960_720.jpg"
+              src="https://get.pxhere.com/photo/sun-technology-energy-solar-panel-save-durable-solar-power-solar-energy-solar-panels-arouse-893490.jpg"
               alt="Energy Infrastructure"
               top
               hover

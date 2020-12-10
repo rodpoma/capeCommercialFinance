@@ -1,5 +1,12 @@
 import React, {useState} from "react";
-import {MDBAnimation, MDBContainer, MDBBtn} from "mdbreact";
+import {
+  MDBAnimation,
+  MDBContainer,
+  MDBBtn,
+  MDBNav,
+  MDBNavItem,
+  MDBNavLink,
+} from "mdbreact";
 import MediaQuery from "react-responsive";
 import PEOB from "./Products/PrivateEquityOwnedBusinesses";
 import VF from "./Products/VendorFinance";
@@ -17,18 +24,28 @@ const Products = () => {
         </MDBAnimation>
         <hr className="hr-light my-4 w-75" />
         <MDBContainer className="mobileMenu">
-          <MDBBtn outline color="danger" onClick={() => setProductPage("PEOB")}>
-            Commercial Businesses
-          </MDBBtn>
-          <MDBBtn outline color="danger" onClick={() => setProductPage("VF")}>
-            Vendor Finance
-          </MDBBtn>
-          <MDBBtn outline color="danger" onClick={() => setProductPage("ES")}>
-            Energy Solutions
-          </MDBBtn>
-          <MDBBtn outline color="danger" onClick={() => setProductPage("RT")}>
-            Recent Transactions
-          </MDBBtn>
+          <MDBNav className="mobileMenu">
+            <MDBNavItem>
+              <MDBNavLink className="mobile-link" to="/commercialBusiness">
+                <MDBBtn color="danger">Commercial Businesses</MDBBtn>
+              </MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink className="mobile-link" to="/vendorFinance">
+                <MDBBtn color="danger">Vendor Finance</MDBBtn>
+              </MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink className="mobile-link" to="/energyFinance">
+                <MDBBtn color="danger">Energy Finance</MDBBtn>
+              </MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink className="mobile-link" to="/recentTransactions">
+                <MDBBtn color="danger">Recent Transactions</MDBBtn>
+              </MDBNavLink>
+            </MDBNavItem>
+          </MDBNav>
         </MDBContainer>
       </MediaQuery>
       {/*Web Browser*/}
@@ -38,7 +55,6 @@ const Products = () => {
             <h1 className="white-text">Products:</h1>
             <div>
               <MDBBtn
-                outline
                 color="danger"
                 size="sm"
                 onClick={() => setProductPage("PEOB")}
@@ -46,7 +62,6 @@ const Products = () => {
                 Commercial Businesses
               </MDBBtn>
               <MDBBtn
-                outline
                 color="danger"
                 size="sm"
                 onClick={() => setProductPage("VF")}
@@ -54,15 +69,13 @@ const Products = () => {
                 Vendor Finance
               </MDBBtn>
               <MDBBtn
-                outline
                 color="danger"
                 size="sm"
                 onClick={() => setProductPage("ES")}
               >
-                Energy Solutions
+                Energy Finance
               </MDBBtn>
               <MDBBtn
-                outline
                 color="danger"
                 size="sm"
                 onClick={() => setProductPage("RT")}
