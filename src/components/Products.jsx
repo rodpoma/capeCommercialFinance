@@ -22,30 +22,34 @@ const Products = () => {
         <MDBAnimation type="fadeIn" delay=".3s">
           <h1 className="white-text text-center">Products</h1>
         </MDBAnimation>
-        <hr className="hr-light my-4 w-75" />
-        <MDBContainer className="mobileMenu">
-          <MDBNav className="mobileMenu">
-            <MDBNavItem>
-              <MDBNavLink className="mobile-link" to="/commercialBusiness">
-                <MDBBtn color="danger">Commercial Businesses</MDBBtn>
-              </MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink className="mobile-link" to="/vendorFinance">
-                <MDBBtn color="danger">Vendor Finance</MDBBtn>
-              </MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink className="mobile-link" to="/energyFinance">
-                <MDBBtn color="danger">Energy Finance</MDBBtn>
-              </MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink className="mobile-link" to="/recentTransactions">
-                <MDBBtn color="danger">Recent Transactions</MDBBtn>
-              </MDBNavLink>
-            </MDBNavItem>
-          </MDBNav>
+        <MDBAnimation type="fadeIn" delay=".3s">
+          <hr className="hr-light w-75" />
+        </MDBAnimation>
+        <MDBContainer>
+          <MDBAnimation type="fadeIn" delay=".3s">
+            <MDBNav className="mobileMenu">
+              <MDBNavItem>
+                <MDBNavLink to="/commercialBusiness">
+                  <MDBBtn color="danger">Commercial Businesses</MDBBtn>
+                </MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem>
+                <MDBNavLink to="/vendorFinance">
+                  <MDBBtn color="danger">Vendor Finance</MDBBtn>
+                </MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem>
+                <MDBNavLink to="/energyFinance">
+                  <MDBBtn color="danger">Energy Finance</MDBBtn>
+                </MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem>
+                <MDBNavLink to="/recentTransactions">
+                  <MDBBtn color="danger">Recent Transactions</MDBBtn>
+                </MDBNavLink>
+              </MDBNavItem>
+            </MDBNav>
+          </MDBAnimation>
         </MDBContainer>
       </MediaQuery>
       {/*Web Browser*/}
