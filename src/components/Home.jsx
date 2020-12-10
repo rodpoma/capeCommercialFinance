@@ -8,8 +8,9 @@ import {
   MDBBtn,
   MDBAnimation,
   MDBCard,
-  MDBCardGroup,
   MDBCardImage,
+  MDBView,
+  MDBMask,
 } from "mdbreact";
 import logo from "../assets/Original on Transparent.png";
 import MediaQuery from "react-responsive";
@@ -79,7 +80,7 @@ const Landing = () => {
 
             <MDBContainer>
               <em>
-                <p className="white-text my-5">
+                <p className="about">
                   An Independent Equipment Financing Company, whose principal
                   has more than 25 years of experience in equipment financing.
                   Including vendor programs, municipal lending energy financing,
@@ -89,50 +90,65 @@ const Landing = () => {
             </MDBContainer>
             <hr className="hr-light my-5 w-75" />
             <MDBContainer className="hpImages" fluid>
-              <MDBCardGroup className="mt-5">
-                <MDBCard>
-                  <MDBCardImage
-                    src="https://media.istockphoto.com/photos/bottles-on-conveyor-belt-in-factory-picture-id641361088?k=6&m=641361088&s=612x612&w=0&h=UY0yHgZNIcK1zniM3P5r8ReYJbEzFglNpJgmiwxJjpg="
-                    alt="drinkProcessor"
-                    className="hpImage"
-                  />
+              <MDBContainer className="sepCards" fluid>
+                <MDBCard className="individualCards">
+                  <MDBView hover zoom>
+                    <MDBCardImage
+                      src="https://media.istockphoto.com/photos/bottles-on-conveyor-belt-in-factory-picture-id641361088?k=6&m=641361088&s=612x612&w=0&h=UY0yHgZNIcK1zniM3P5r8ReYJbEzFglNpJgmiwxJjpg="
+                      alt="drinkProcessor"
+                      className="hpImage"
+                    />
+                  </MDBView>
                 </MDBCard>
-                <MDBCard>
-                  <MDBCardImage
-                    src="https://media.istockphoto.com/photos/drink-cans-on-the-production-lines-picture-id875632154?k=6&m=875632154&s=612x612&w=0&h=7VsrWswL3-ra0VW0MXH3JhKWiGB7PJ3EN659Pxxc2Mg="
-                    alt="foodProcessor"
-                    className="hpImage"
-                  />
+                <MDBCard className="individualCards">
+                  <MDBView hover zoom>
+                    <MDBCardImage
+                      src="https://media.istockphoto.com/photos/drink-cans-on-the-production-lines-picture-id875632154?k=6&m=875632154&s=612x612&w=0&h=7VsrWswL3-ra0VW0MXH3JhKWiGB7PJ3EN659Pxxc2Mg="
+                      alt="foodProcessor"
+                      className="hpImage"
+                    />
+                  </MDBView>
                 </MDBCard>
-                <MDBCard>
-                  <MDBCardImage
-                    src="https://media.istockphoto.com/photos/industrial-new-factory-modern-machines-picture-id664213136?k=6&m=664213136&s=612x612&w=0&h=Ky5naCSOnMD4q-He19e0ohR-wstswdymkczDXZDiEUY="
-                    alt="plasticInjection"
-                    className="hpImage"
-                  />
+                <MDBCard className="individualCards">
+                  <MDBView hover zoom>
+                    <MDBCardImage
+                      src="https://media.istockphoto.com/photos/industrial-new-factory-modern-machines-picture-id664213136?k=6&m=664213136&s=612x612&w=0&h=Ky5naCSOnMD4q-He19e0ohR-wstswdymkczDXZDiEUY="
+                      alt="plasticInjection"
+                      className="hpImage"
+                    />
+                  </MDBView>
                 </MDBCard>
-                <MDBCard>
-                  <MDBCardImage
-                    src="https://media.istockphoto.com/photos/production-line-of-plastic-industry-picture-id510162486?k=6&m=510162486&s=612x612&w=0&h=BcECtLxFTWjm_dSZ9GCy5KftmXAuddew1Ium-pCOeYk="
-                    alt="plasticInjection"
-                    className="hpImage"
-                  />
+                <MDBCard className="individualCards">
+                  <MDBView hover zoom>
+                    <MDBCardImage
+                      src="https://media.istockphoto.com/photos/production-line-of-plastic-industry-picture-id510162486?k=6&m=510162486&s=612x612&w=0&h=BcECtLxFTWjm_dSZ9GCy5KftmXAuddew1Ium-pCOeYk="
+                      alt="plasticInjection"
+                      className="hpImage"
+                    />
+                  </MDBView>
                 </MDBCard>
-                <MDBCard>
-                  <MDBCardImage
-                    src="https://media.istockphoto.com/photos/laser-cutting-of-metal-modern-industrial-technology-small-depth-of-picture-id1006017064?k=6&m=1006017064&s=612x612&w=0&h=sLM05HCuORpneaJyqNrUz3UID_SBR8-GMLLajPGIAb4="
-                    alt="cnc1"
-                    className="hpImage"
-                  />
+                <MDBCard className="individualCards">
+                  <MDBView hover zoom>
+                    <MDBCardImage
+                      src="https://media.istockphoto.com/photos/laser-cutting-of-metal-modern-industrial-technology-small-depth-of-picture-id1006017064?k=6&m=1006017064&s=612x612&w=0&h=sLM05HCuORpneaJyqNrUz3UID_SBR8-GMLLajPGIAb4="
+                      alt="cnc1"
+                      className="hpImage"
+                    />
+                    <MDBMask className="flex-center">
+                      <p className="white-text">Zoom effect</p>
+                    </MDBMask>
+                  </MDBView>
                 </MDBCard>
-                <MDBCard>
-                  <MDBCardImage
-                    src="https://media.istockphoto.com/photos/machining-center-cutting-mold-picture-id1130518026?k=6&m=1130518026&s=612x612&w=0&h=ASE2fykpJXsJcnFCytdWXjHyVTwxeQSaaM2nHPaBkEU="
-                    alt="cnc2"
-                    className="hpImage"
-                  />
+                <MDBCard className="individualCards">
+                  <MDBView hover zoom>
+                    <MDBCardImage
+                      src="https://media.istockphoto.com/photos/machining-center-cutting-mold-picture-id1130518026?k=6&m=1130518026&s=612x612&w=0&h=ASE2fykpJXsJcnFCytdWXjHyVTwxeQSaaM2nHPaBkEU="
+                      alt="cnc2"
+                      className="hpImage"
+                    />
+                  </MDBView>
                 </MDBCard>
-              </MDBCardGroup>
+              </MDBContainer>
             </MDBContainer>
           </MDBAnimation>
         </MDBCol>
