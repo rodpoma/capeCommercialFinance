@@ -6,7 +6,6 @@ import {
   MDBCardText,
   MDBCardTitle,
   MDBCardBody,
-  MDBCardGroup,
   MDBCardImage,
 } from "mdbreact";
 
@@ -15,8 +14,8 @@ const RecentTransactions = () => {
     <MDBContainer className="mt-1">
       <MDBAnimation type="fadeIn" delay=".3s">
         <h3 className="white-text">Recent Transactions</h3>
-        <MDBCardGroup className="mt-1">
-          <MDBCard>
+        <MDBContainer className="sepCards">
+          <MDBCard className="individualCards">
             <MDBCardImage
               src="https://media.istockphoto.com/photos/laser-cutting-of-metal-modern-industrial-technology-small-depth-of-picture-id1006017064?k=6&m=1006017064&s=612x612&w=0&h=sLM05HCuORpneaJyqNrUz3UID_SBR8-GMLLajPGIAb4="
               alt="MachineTools"
@@ -37,7 +36,7 @@ const RecentTransactions = () => {
               </MDBCardText>
             </MDBCardBody>
           </MDBCard>
-          <MDBCard>
+          <MDBCard className="individualCards">
             <MDBCardImage
               src="https://media.istockphoto.com/photos/production-line-of-plastic-industry-picture-id510162486?k=6&m=510162486&s=612x612&w=0&h=BcECtLxFTWjm_dSZ9GCy5KftmXAuddew1Ium-pCOeYk="
               alt="plasticInjectionMachine"
@@ -59,7 +58,7 @@ const RecentTransactions = () => {
               </MDBCardText>
             </MDBCardBody>
           </MDBCard>
-          <MDBCard>
+          <MDBCard className="individualCards">
             <MDBCardImage
               src="https://media.istockphoto.com/photos/drink-cans-on-the-production-lines-picture-id875632154?k=6&m=875632154&s=612x612&w=0&h=7VsrWswL3-ra0VW0MXH3JhKWiGB7PJ3EN659Pxxc2Mg="
               alt="foodProcessor"
@@ -80,7 +79,7 @@ const RecentTransactions = () => {
               </MDBCardText>
             </MDBCardBody>
           </MDBCard>
-        </MDBCardGroup>
+        </MDBContainer>
       </MDBAnimation>
     </MDBContainer>
   );
