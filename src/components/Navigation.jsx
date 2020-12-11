@@ -17,7 +17,7 @@ const NavBarMobile = () => {
         <MDBNavbar color="white" dark expand="md" className="nav" fixed="top">
           <MDBNavbarBrand href="/" className="m-auto">
             {/*mr-auto or ml-auto will justify to right or left*/}
-            <img src={logo} alt="logo" height="30" />
+            <img src={logo} alt="logo" height="40" />
           </MDBNavbarBrand>
         </MDBNavbar>
       </MediaQuery>
@@ -25,7 +25,7 @@ const NavBarMobile = () => {
       <MediaQuery minDeviceWidth={1201}>
         <MDBNavbar color="white" dark expand="md" className="nav" fixed="top">
           <MDBNavbarBrand href="/" className="mr-auto">
-            <img src={logo} alt="logo" height="80" />
+            <img src={logo} alt="logo" height="40" />
           </MDBNavbarBrand>
           <MDBNavbarNav className="webNav" right>
             <MDBNavItem className="webNavItem">

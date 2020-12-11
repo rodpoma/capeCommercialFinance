@@ -11,13 +11,13 @@ import {
 
 const EnergySolutions = () => {
   return (
-    <MDBContainer className="mt-1">
+    <MDBContainer className="mt-1" fluid>
       <MDBAnimation type="fadeIn" delay=".3s">
         <h3 className="white-text">Energy Finance</h3>
         <MDBCardGroup className="mt-1">
           <MDBCard>
             <MDBCardImage
-              src="https://get.pxhere.com/photo/sun-technology-energy-solar-panel-save-durable-solar-power-solar-energy-solar-panels-arouse-893490.jpg"
+              src="https://media.istockphoto.com/photos/energy-plant-picture-id525232316?k=6&m=525232316&s=612x612&w=0&h=Z8DXasn3qzB-S4_wpb0Ira2WWnn9mTojkxWOMTrKdVw="
               alt="Energy Infrastructure"
               top
               hover
@@ -27,21 +27,24 @@ const EnergySolutions = () => {
           <MDBCard>
             <MDBCardBody className="productCard">
               <MDBCardText>
-                Our experience in distributed Energy Finance goes back more than
-                a decade, we have significant experience in financing projects
-                using a lease, loan, and equity to fund the following projects.
-                Our typical approach is to partner with project developers.
-                <br />
-                <br />
-                <ul>
-                  <li>Solar: Power Purchase Agreement</li>
-                  <li>CoGen: Energy Services Agreement</li>
-                  <li>Energy Savings</li>
-                  <li>Energy Storage</li>
-                  <li>Fuel Cells</li>
-                </ul>
-                Cape does provide Financing for the construction of these
-                projects, which can typically run from 3 to 18 months.
+                <p className="cardText">
+                  Our experience in distributed Energy Finance goes back more
+                  than a decade, we have significant experience in financing
+                  projects using a lease, loan, and equity to fund the following
+                  projects. Our typical approach is to partner with project
+                  developers.
+                  <br />
+                  <br />
+                  <ul>
+                    <li>Solar: Power Purchase Agreement</li>
+                    <li>CoGen: Energy Services Agreement</li>
+                    <li>Energy Savings</li>
+                    <li>Energy Storage</li>
+                    <li>Fuel Cells</li>
+                  </ul>
+                  Cape does provide Financing for the construction of these
+                  projects, which can typically run from 3 to 18 months.
+                </p>
               </MDBCardText>
             </MDBCardBody>
           </MDBCard>

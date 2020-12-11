@@ -11,14 +11,14 @@ import {
 
 const PrivateEquityOwnedBusinesses = () => {
   return (
-    <MDBContainer className="mt-1">
+    <MDBContainer className="PEOB" fluid>
       <MDBAnimation type="fadeIn" delay=".3s">
         <h3 className="white-text">Commercial Businesses</h3>
         <MDBCardGroup className="mt-1">
           <MDBCard>
             <MDBCardBody className="productCard">
               <MDBCardText>
-                <p>
+                <p className="cardText">
                   As an <em>Independent</em> equipment finance company, our
                   focus is on supporting CAPEX needs for Private Equity
                   Owned/Sponsoered business and Privately held organizations. We
@@ -36,8 +36,8 @@ const PrivateEquityOwnedBusinesses = () => {
               src="https://cdn.pixabay.com/photo/2014/09/10/17/29/handshake-440959_960_720.jpg"
               alt="Business Handshake"
               top
-              hover
               overlay="white-slight"
+              className="cardImage"
             />
           </MDBCard>
         </MDBCardGroup>
@@ -46,7 +46,6 @@ const PrivateEquityOwnedBusinesses = () => {
             <MDBCardImage
               src="https://cdn.pixabay.com/photo/2016/02/19/11/19/office-1209640_960_720.jpg"
               alt="Private Equity"
-              hover
               top
               overlay="white-slight"
             />
@@ -54,7 +53,7 @@ const PrivateEquityOwnedBusinesses = () => {
           <MDBCard>
             <MDBCardBody className="productCard">
               <MDBCardText>
-                <p>
+                <p className="cardText">
                   Our typical direct customer is:
                   <ul>
                     <li>Highly leveraged</li>
@@ -65,7 +64,6 @@ const PrivateEquityOwnedBusinesses = () => {
                       even both
                     </li>
                   </ul>
-                  <br />
                   This is where Cape excels in providing debt solutions. If your
                   business is private, unrated, middle-market, or private
                   equity-owned, we can help assist you with financing:
