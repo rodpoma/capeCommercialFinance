@@ -37,7 +37,6 @@ const PrivateEquityOwnedBusinesses = () => {
               alt="Business Handshake"
               top
               overlay="white-slight"
-              className="cardImage"
             />
           </MDBCard>
         </MDBCardGroup>
