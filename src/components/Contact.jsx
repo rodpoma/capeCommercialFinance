@@ -35,7 +35,7 @@ const Contact = () => {
   return (
     <MDBContainer className="cards" fluid>
       <MDBAnimation type="fadeIn" delay=".6s">
-        <MDBContainer fluid>
+        <MDBContainer className="w-75" fluid>
           <h2 className="white-text">Info</h2>
           <hr className="hr-light" />
           <h6 className="white-text mb-2">
@@ -57,30 +57,31 @@ const Contact = () => {
             </em>
           </h6>
         </MDBContainer>
-
-        <MDBCard>
-          <MDBCardBody className="rgba-grey-light">
-            <form onSubmit={sendEmail}>
-              <div className="black-text">
-                <MDBInput label="Name" name="user_name" type="text" />
-                <MDBInput label="Email" name="user_email" type="email" />
-                <MDBInput label="Subject" name="subject" type="text" />
-                <MDBInput
-                  type="textarea"
-                  name="message"
-                  rows="2"
-                  label="Message"
-                />
-              </div>
-              <div className="text-center">
-                <MDBBtn outline color="black" type="submit">
-                  Send
-                  <MDBIcon far icon="paper-plane" className="ml-1" />
-                </MDBBtn>
-              </div>
-            </form>
-          </MDBCardBody>
-        </MDBCard>
+        <MDBContainer className="w-75" fluid>
+          <MDBCard>
+            <MDBCardBody className="rgba-grey-light">
+              <form onSubmit={sendEmail}>
+                <div className="black-text">
+                  <MDBInput label="Name" name="user_name" type="text" />
+                  <MDBInput label="Email" name="user_email" type="email" />
+                  <MDBInput label="Subject" name="subject" type="text" />
+                  <MDBInput
+                    type="textarea"
+                    name="message"
+                    rows="2"
+                    label="Message"
+                  />
+                </div>
+                <div className="text-center">
+                  <MDBBtn outline color="black" type="submit">
+                    Send
+                    <MDBIcon far icon="paper-plane" className="ml-1" />
+                  </MDBBtn>
+                </div>
+              </form>
+            </MDBCardBody>
+          </MDBCard>
+        </MDBContainer>
       </MDBAnimation>
     </MDBContainer>
   );
