@@ -30,22 +30,30 @@ const Products = () => {
             <MDBNav className="mobileMenu">
               <MDBNavItem>
                 <MDBNavLink to="/commercialBusiness">
-                  <MDBBtn color="danger">Commercial Businesses</MDBBtn>
+                  <MDBBtn color="danger" size="lg">
+                    Commercial Businesses
+                  </MDBBtn>
                 </MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
                 <MDBNavLink to="/vendorFinance">
-                  <MDBBtn color="danger">Vendor Finance</MDBBtn>
+                  <MDBBtn color="danger" size="lg">
+                    Vendor Finance
+                  </MDBBtn>
                 </MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
                 <MDBNavLink to="/energyFinance">
-                  <MDBBtn color="danger">Energy Finance</MDBBtn>
+                  <MDBBtn color="danger" size="lg">
+                    Energy Finance
+                  </MDBBtn>
                 </MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
                 <MDBNavLink to="/recentTransactions">
-                  <MDBBtn color="danger">Recent Transactions</MDBBtn>
+                  <MDBBtn color="danger" size="lg">
+                    Recent Transactions
+                  </MDBBtn>
                 </MDBNavLink>
               </MDBNavItem>
             </MDBNav>
@@ -55,38 +63,36 @@ const Products = () => {
       {/*Web Browser*/}
       <MediaQuery minDeviceWidth={1201}>
         <MDBAnimation type="fadeIn" delay=".3s">
+          <h1 className="white-text flex-center">Products</h1>
           <MDBContainer className="productsTab" fluid>
-            <h1 className="white-text">Products:</h1>
-            <div>
-              <MDBBtn
-                color="danger"
-                size="sm"
-                onClick={() => setProductPage("PEOB")}
-              >
-                Commercial Businesses
-              </MDBBtn>
-              <MDBBtn
-                color="danger"
-                size="sm"
-                onClick={() => setProductPage("VF")}
-              >
-                Vendor Finance
-              </MDBBtn>
-              <MDBBtn
-                color="danger"
-                size="sm"
-                onClick={() => setProductPage("ES")}
-              >
-                Energy Finance
-              </MDBBtn>
-              <MDBBtn
-                color="danger"
-                size="sm"
-                onClick={() => setProductPage("RT")}
-              >
-                Recent Transactions
-              </MDBBtn>
-            </div>
+            <MDBBtn
+              color="danger"
+              size="lg"
+              onClick={() => setProductPage("PEOB")}
+            >
+              Commercial Businesses
+            </MDBBtn>
+            <MDBBtn
+              color="danger"
+              size="lg"
+              onClick={() => setProductPage("VF")}
+            >
+              Vendor Finance
+            </MDBBtn>
+            <MDBBtn
+              color="danger"
+              size="lg"
+              onClick={() => setProductPage("ES")}
+            >
+              Energy Finance
+            </MDBBtn>
+            <MDBBtn
+              color="danger"
+              size="lg"
+              onClick={() => setProductPage("RT")}
+            >
+              Recent Transactions
+            </MDBBtn>
           </MDBContainer>
           <hr className="hr-light my-4" />
           {productPage === "VF" ? (

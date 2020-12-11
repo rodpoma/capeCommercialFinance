@@ -17,7 +17,7 @@ const EnergySolutions = () => {
         <MDBCardGroup className="mt-1">
           <MDBCard>
             <MDBCardImage
-              src="https://media.istockphoto.com/photos/energy-plant-picture-id525232316?k=6&m=525232316&s=612x612&w=0&h=Z8DXasn3qzB-S4_wpb0Ira2WWnn9mTojkxWOMTrKdVw="
+              src="http://spectrum.mit.edu/wp-content/uploads/flickr-cogen-plant.jpg"
               alt="Energy Infrastructure"
               top
               hover
