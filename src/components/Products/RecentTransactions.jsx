@@ -11,10 +11,10 @@ import {
 
 const RecentTransactions = () => {
   return (
-    <MDBContainer className="mt-1">
+    <MDBContainer className="mt-1" fluid>
       <MDBAnimation type="fadeIn" delay=".3s">
         <h3 className="white-text">Recent Transactions</h3>
-        <MDBContainer className="sepCards">
+        <MDBContainer className="sepCards" fluid>
           <MDBCard className="individualCards">
             <MDBCardImage
               src="https://media.istockphoto.com/photos/laser-cutting-of-metal-modern-industrial-technology-small-depth-of-picture-id1006017064?k=6&m=1006017064&s=612x612&w=0&h=sLM05HCuORpneaJyqNrUz3UID_SBR8-GMLLajPGIAb4="

@@ -28,13 +28,15 @@
   margin-bottom: 20px;
 }
 .cardImage {
-  height: 220px;
-  width: 300px;
-  object-fit: cover;
+  display: block;
+  width: 10vw;
+  height: 30vh;
+  object-fit: fill;
 }
 .sepCards {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .individualCards {
   margin: 10px;
@@ -45,7 +47,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.cardText {
+  font-size: 0.7vw;
+}
+.PEOB {
+  max-width: 60vw;
+}
 .hpImage {
   height: 300px;
   width: auto;
