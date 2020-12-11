@@ -28,11 +28,6 @@
   margin-top: 50px;
   margin-bottom: 20px;
 }
-.cardImage {
-  width: 10vw;
-  height: 30vh;
-  object-fit: fill;
-}
 .sepCards {
   display: flex;
   flex-direction: row;

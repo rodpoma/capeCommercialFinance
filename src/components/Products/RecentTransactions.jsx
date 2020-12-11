@@ -22,7 +22,7 @@ const RecentTransactions = () => {
               top
               hover
               overlay="white-slight"
-              className="cardImage"
+              style={{height: "30vh"}}
             />
             <MDBCardBody>
               <MDBCardTitle className="black-text" tag="h5">
@@ -43,7 +43,7 @@ const RecentTransactions = () => {
               top
               hover
               overlay="white-slight"
-              className="cardImage"
+              style={{height: "30vh"}}
             />
             <MDBCardBody>
               <MDBCardTitle className="black-text" tag="h5">
@@ -65,7 +65,7 @@ const RecentTransactions = () => {
               top
               hover
               overlay="white-slight"
-              className="cardImage"
+              style={{height: "30vh"}}
             />
             <MDBCardBody>
               <MDBCardTitle className="black-text" tag="h5">
