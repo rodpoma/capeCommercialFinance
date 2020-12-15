@@ -63,34 +63,18 @@ const Products = () => {
       {/*Web Browser*/}
       <MediaQuery minDeviceWidth={1201}>
         <MDBAnimation type="fadeIn" delay=".3s">
-          <h1 className="white-text flex-center">Products</h1>
+          <h3 className="white-text flex-center">Products</h3>
           <MDBContainer className="productsTab" fluid>
-            <MDBBtn
-              color="danger"
-              size="lg"
-              onClick={() => setProductPage("PEOB")}
-            >
+            <MDBBtn color="danger" onClick={() => setProductPage("PEOB")}>
               Commercial Businesses
             </MDBBtn>
-            <MDBBtn
-              color="danger"
-              size="lg"
-              onClick={() => setProductPage("VF")}
-            >
+            <MDBBtn color="danger" onClick={() => setProductPage("VF")}>
               Vendor Finance
             </MDBBtn>
-            <MDBBtn
-              color="danger"
-              size="lg"
-              onClick={() => setProductPage("ES")}
-            >
+            <MDBBtn color="danger" onClick={() => setProductPage("ES")}>
               Energy Finance
             </MDBBtn>
-            <MDBBtn
-              color="danger"
-              size="lg"
-              onClick={() => setProductPage("RT")}
-            >
+            <MDBBtn color="danger" onClick={() => setProductPage("RT")}>
               Recent Transactions
             </MDBBtn>
           </MDBContainer>
