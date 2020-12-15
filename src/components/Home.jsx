@@ -35,29 +35,30 @@ const Landing = () => {
               <em>
                 <p
                   className="white-text text-center"
-                  style={{margin: "2.5% 10% 2.5% 10%"}}
+                  style={{margin: "0 5% 0 5%", fontSize: "3.75vw"}}
                 >
-                  An Independent Equipment Financing Company, whose principal
-                  has more than 25 years of experience in equipment financing.
-                  Including vendor programs, municipal lending energy financing,
-                  and direct large ticket structured solutions.
+                  An Independent Equipment Financing Company, whose focus is on
+                  delivering financing across several sectors, including to mid
+                  and lower mid-market customers, customer financing programs
+                  for industrial manufacturers, and structured solutions to the
+                  distributed energy market.
                 </p>
               </em>
             </MDBAnimation>
             <MDBNav className="mobileMenu">
               <MDBNavItem>
-                <MDBNavLink className="mobile-link" to="/products">
+                <MDBNavLink to="/products">
                   <MDBAnimation type="fadeIn" delay="1.2s">
-                    <MDBBtn outline rounded color="white">
+                    <MDBBtn rounded color="danger">
                       Products
                     </MDBBtn>
                   </MDBAnimation>
                 </MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
-                <MDBNavLink className="mobile-link" to="/contact">
+                <MDBNavLink to="/contact">
                   <MDBAnimation type="fadeIn" delay="1.5s">
-                    <MDBBtn outline rounded color="white">
+                    <MDBBtn rounded color="danger">
                       Contact
                     </MDBBtn>
                   </MDBAnimation>

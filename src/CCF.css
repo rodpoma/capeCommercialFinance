@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 5vh;
+  margin-top: 2vh;
 }
 .productsTab {
   display: flex;
@@ -47,6 +47,9 @@
 }
 .PEOB {
   max-width: 60vw;
+}
+.PEOBCard {
+  max-height: 32.5vh;
 }
 .hpImage {
   height: 300px;
