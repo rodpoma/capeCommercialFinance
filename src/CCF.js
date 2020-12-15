@@ -22,6 +22,7 @@ const CCF = () => {
       <Navigation className="nav" />
       <MDBContainer
         fluid
+        className="page"
         style={{
           backgroundColor: "#0b0633",
           height: "100vh",
