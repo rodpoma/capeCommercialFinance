@@ -6,14 +6,16 @@ const CommercialBusinessesMobile = () => {
   return (
     <MDBContainer className="cards">
       <MDBAnimation type="fadeInLeft" delay=".3s">
-        <h3 className="white-text text-center">Commercial Buisness</h3>
-        <hr className="hr-light my-4" />
+        <h3 className="white-text text-center" style={{fontSize: "7vw"}}>
+          Commercial Business
+        </h3>
+        <hr className="hr-light my-3" />
       </MDBAnimation>
       <MDBAnimation type="fadeInLeft" delay=".6s">
         {page === "one" ? (
           <p
             className="white-text text-left"
-            style={{margin: "2.5% 10% 2.5% 10%"}}
+            style={{margin: "2.5% 10% 2.5% 10%", fontSize: "3.5vw"}}
           >
             As an <em>Independent</em> equipment finance company, our focus is
             on supporting CAPEX needs for Private Equity Owned/Sponsoered
@@ -26,7 +28,7 @@ const CommercialBusinessesMobile = () => {
         ) : (
           <p
             className="white-text text-left"
-            style={{margin: "2.5% 10% 2.5% 10%"}}
+            style={{margin: "2.5% 10% 2.5% 10%", fontSize: "3.5vw"}}
           >
             Our typical direct customer is:
             <ul>
@@ -49,16 +51,18 @@ const CommercialBusinessesMobile = () => {
         )}
         <MDBContainer className="mobileBtns">
           {page === "one" ? (
-            <MDBBtn color="danger" onClick={() => setPage("two")}>
+            <MDBBtn color="danger" size="sm" onClick={() => setPage("two")}>
               Next
             </MDBBtn>
           ) : (
-            <MDBBtn color="danger" onClick={() => setPage("one")}>
+            <MDBBtn color="danger" size="sm" onClick={() => setPage("one")}>
               Previous
             </MDBBtn>
           )}
           <MDBNavLink to="/products">
-            <MDBBtn color="danger">Back to Products</MDBBtn>
+            <MDBBtn color="danger" size="sm">
+              Back to Products
+            </MDBBtn>
           </MDBNavLink>
         </MDBContainer>
       </MDBAnimation>

@@ -30,28 +30,28 @@ const Products = () => {
             <MDBNav className="mobileMenu">
               <MDBNavItem>
                 <MDBNavLink to="/commercialBusiness">
-                  <MDBBtn color="danger" size="lg">
+                  <MDBBtn color="danger" rounded>
                     Commercial Businesses
                   </MDBBtn>
                 </MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
                 <MDBNavLink to="/vendorFinance">
-                  <MDBBtn color="danger" size="lg">
+                  <MDBBtn color="danger" rounded>
                     Vendor Finance
                   </MDBBtn>
                 </MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
                 <MDBNavLink to="/energyFinance">
-                  <MDBBtn color="danger" size="lg">
+                  <MDBBtn color="danger" rounded>
                     Energy Finance
                   </MDBBtn>
                 </MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
                 <MDBNavLink to="/recentTransactions">
-                  <MDBBtn color="danger" size="lg">
+                  <MDBBtn color="danger" rounded>
                     Recent Transactions
                   </MDBBtn>
                 </MDBNavLink>

@@ -15,7 +15,7 @@ const PrivateEquityOwnedBusinesses = () => {
       <MDBAnimation type="fadeIn" delay=".3s">
         <h3 className="white-text">Commercial Businesses</h3>
         <MDBCardGroup className="mt-1">
-          <MDBCard>
+          <MDBCard className="PEOBCard">
             <MDBCardBody className="productCard">
               <MDBCardText>
                 <p className="cardText">
@@ -31,7 +31,7 @@ const PrivateEquityOwnedBusinesses = () => {
               </MDBCardText>
             </MDBCardBody>
           </MDBCard>
-          <MDBCard>
+          <MDBCard className="PEOBCard">
             <MDBCardImage
               src="https://cdn.pixabay.com/photo/2014/09/10/17/29/handshake-440959_960_720.jpg"
               alt="Business Handshake"
@@ -41,7 +41,7 @@ const PrivateEquityOwnedBusinesses = () => {
           </MDBCard>
         </MDBCardGroup>
         <MDBCardGroup>
-          <MDBCard>
+          <MDBCard className="PEOBCard">
             <MDBCardImage
               src="https://cdn.pixabay.com/photo/2016/02/19/11/19/office-1209640_960_720.jpg"
               alt="Private Equity"
@@ -49,10 +49,10 @@ const PrivateEquityOwnedBusinesses = () => {
               overlay="white-slight"
             />
           </MDBCard>
-          <MDBCard>
+          <MDBCard className="PEOBCard">
             <MDBCardBody className="productCard">
               <MDBCardText>
-                <p className="cardText">
+                <p style={{fontSize: ".77vw"}}>
                   Our typical direct customer is:
                   <ul>
                     <li>Highly leveraged</li>

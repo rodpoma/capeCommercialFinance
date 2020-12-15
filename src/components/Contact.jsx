@@ -10,6 +10,7 @@ import {
 } from "mdbreact";
 import emailjs from "emailjs-com";
 import swal from "sweetalert";
+import MediaQuery from "react-responsive";
 
 const Contact = () => {
   function sendEmail(e) {
@@ -38,12 +39,12 @@ const Contact = () => {
         <MDBContainer className="w-75" fluid>
           <h2 className="white-text">Info</h2>
           <hr className="hr-light" />
-          <h6 className="white-text mb-2">
+          <h6 className="white-text mb-3">
             Phone:
             <br />
-            <em>+1(917)940-0239</em>
+            <em>+1(917)-940-0239</em>
           </h6>
-          <h6 className="white-text mb-2">
+          <h6 className="white-text mb-3">
             E-mail:
             <br />
             <em>info@capecf.com</em>
@@ -57,31 +58,33 @@ const Contact = () => {
             </em>
           </h6>
         </MDBContainer>
-        <MDBContainer className="w-75" fluid>
-          <MDBCard>
-            <MDBCardBody className="rgba-grey-light">
-              <form onSubmit={sendEmail}>
-                <div className="black-text">
-                  <MDBInput label="Name" name="user_name" type="text" />
-                  <MDBInput label="Email" name="user_email" type="email" />
-                  <MDBInput label="Subject" name="subject" type="text" />
-                  <MDBInput
-                    type="textarea"
-                    name="message"
-                    rows="2"
-                    label="Message"
-                  />
-                </div>
-                <div className="text-center">
-                  <MDBBtn outline color="black" type="submit">
-                    Send
-                    <MDBIcon far icon="paper-plane" className="ml-1" />
-                  </MDBBtn>
-                </div>
-              </form>
-            </MDBCardBody>
-          </MDBCard>
-        </MDBContainer>
+        <MediaQuery minDeviceWidth={1201}>
+          <MDBContainer className="w-75" fluid>
+            <MDBCard>
+              <MDBCardBody className="rgba-grey-light">
+                <form onSubmit={sendEmail}>
+                  <div className="black-text">
+                    <MDBInput label="Name" name="user_name" type="text" />
+                    <MDBInput label="Email" name="user_email" type="email" />
+                    <MDBInput label="Subject" name="subject" type="text" />
+                    <MDBInput
+                      type="textarea"
+                      name="message"
+                      rows="2"
+                      label="Message"
+                    />
+                  </div>
+                  <div className="text-center">
+                    <MDBBtn outline color="black" type="submit">
+                      Send
+                      <MDBIcon far icon="paper-plane" className="ml-1" />
+                    </MDBBtn>
+                  </div>
+                </form>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBContainer>
+        </MediaQuery>
       </MDBAnimation>
     </MDBContainer>
   );

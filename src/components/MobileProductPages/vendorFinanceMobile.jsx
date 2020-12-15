@@ -5,13 +5,15 @@ const VendorFinanceMobile = () => {
   return (
     <MDBContainer className="cards">
       <MDBAnimation type="fadeInLeft" delay=".3s">
-        <h3 className="white-text text-center">Vendor Finance</h3>
+        <h3 className="white-text text-center" style={{fontSize: "7vw"}}>
+          Vendor Finance
+        </h3>
         <hr className="hr-light my-2 w-75" />
       </MDBAnimation>
       <MDBAnimation type="fadeInLeft" delay=".6s">
         <p
           className="white-text text-left"
-          style={{margin: "2.5% 10% 2.5% 10%"}}
+          style={{margin: "2.5% 10% 2.5% 10%", fontSize: "3.5vw"}}
         >
           Cape provides financing programs to equipment manufacturers to help
           sell more products, increase average sale price and accelerate the
@@ -28,7 +30,9 @@ const VendorFinanceMobile = () => {
         </p>
         <MDBContainer className="mobileBtns">
           <MDBNavLink to="/products">
-            <MDBBtn color="danger">Back to Products</MDBBtn>
+            <MDBBtn color="danger" size="sm">
+              Back to Products
+            </MDBBtn>
           </MDBNavLink>
         </MDBContainer>
       </MDBAnimation>
