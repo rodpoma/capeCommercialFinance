@@ -16,7 +16,7 @@ import ES from "./Products/EnergySolutions";
 const Products = () => {
   const [productPage, setProductPage] = useState(null);
   return (
-    <MDBContainer className="cards w-75" fluid>
+    <MDBContainer className="comps" fluid>
       {/*Mobile*/}
       <MediaQuery maxDeviceWidth={1200}>
         <MDBAnimation type="fadeIn" delay=".3s">

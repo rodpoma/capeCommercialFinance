@@ -34,7 +34,7 @@ const Contact = () => {
       );
   }
   return (
-    <MDBContainer className="cards" fluid>
+    <MDBContainer className="comps" fluid>
       <MDBAnimation type="fadeIn" delay=".6s">
         <MDBContainer className="w-75" fluid>
           <h2 className="white-text">Info</h2>

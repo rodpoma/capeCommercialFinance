@@ -17,7 +17,7 @@ import MediaQuery from "react-responsive";
 
 const Landing = () => {
   return (
-    <MDBContainer className="cards" fluid>
+    <MDBContainer className="comps" fluid>
       {/*Mobile*/}
       <MediaQuery maxDeviceWidth={1200}>
         <MDBCol className="white-text text-center mt-5">
@@ -79,7 +79,7 @@ const Landing = () => {
               style={{width: "50vw"}}
             />
 
-            <MDBContainer>
+            <MDBContainer fluid>
               <em>
                 <p className="about">
                   An Independent Equipment Financing Company, whose focus is on
