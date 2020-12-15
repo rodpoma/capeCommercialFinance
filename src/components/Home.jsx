@@ -82,10 +82,11 @@ const Landing = () => {
             <MDBContainer>
               <em>
                 <p className="about">
-                  An Independent Equipment Financing Company, whose principal
-                  has more than 25 years of experience in equipment financing.
-                  Including vendor programs, municipal lending energy financing,
-                  and direct large ticket structured solutions.
+                  An Independent Equipment Financing Company, whose focus is on
+                  delivering financing across several sectors, including to mid
+                  and lower mid-market customers, customer financing programs
+                  for industrial manufacturers, and structured solutions to the
+                  distributed energy market.
                 </p>
               </em>
             </MDBContainer>
