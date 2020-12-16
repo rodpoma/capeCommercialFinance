@@ -27,6 +27,7 @@ const CCF = () => {
           backgroundColor: "#0b0633",
           height: "100vh",
           width: "100vw",
+          position: "fixed",
         }}
       >
         <Route path="/" exact component={Home} />
