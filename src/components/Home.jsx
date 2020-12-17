@@ -17,7 +17,7 @@ import MediaQuery from "react-responsive";
 
 const Landing = () => {
   return (
-    <MDBContainer fluid>
+    <MDBContainer className="EC" fluid>
       {/*Mobile*/}
       <MediaQuery maxDeviceWidth={1200}>
         <MDBContainer className="cards" fluid>
