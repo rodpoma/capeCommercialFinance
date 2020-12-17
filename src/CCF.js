@@ -19,15 +19,13 @@ require("dotenv").config();
 const CCF = () => {
   return (
     <BrowserRouter>
-      <Navigation className="nav" />
+      <Navigation />
       <MDBContainer
         fluid
-        className="page"
         style={{
           backgroundColor: "#0b0633",
           height: "100vh",
           width: "100vw",
-          position: "fixed",
         }}
       >
         <Route path="/" exact component={Home} />

@@ -2,7 +2,6 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-
 /* #0b0633 */
 .mobileMenu {
   display: flex;
@@ -13,7 +12,6 @@
 }
 .productsTab {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   justify-content: center;
   max-height: 50vh;
@@ -49,10 +47,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
   max-height: calc(100vh - 120px);
-  height: 100%;
+  height: 100vh;
   overflow-y: scroll;
 }
-
+.EC {
+  height: 100%;
+  width: 100%;
+}
 .cardText {
   font-size: 0.87vw;
 }
@@ -77,23 +78,19 @@
 .App {
   text-align: center;
 }
-
 .webNav {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-
 .webNavItem {
   margin: 0 0.75vw;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -104,7 +101,6 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #61dafb;
 }
