@@ -37,9 +37,11 @@ const VendorFinance = () => {
                   transaction size, giving manufacturers the ability to partner
                   with just one financing source.
                   <br />
+                  <br />
                   Our partners are manufacturers with equipment sales starting
                   at $50M, a segment often ignored by large bank-owned equipment
                   leasing organizations.
+                  <br />
                   <br />
                   Cape can provide Application Only programs up to $350,000 and
                   Full-Financial progrmas for transactions beyond $10,000,000.

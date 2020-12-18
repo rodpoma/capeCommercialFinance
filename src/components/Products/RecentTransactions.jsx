@@ -28,7 +28,7 @@ const RecentTransactions = () => {
               <MDBCardTitle className="black-text" tag="h5">
                 $6,700,000 for New Machine Tools
               </MDBCardTitle>
-              <MDBCardText>
+              <MDBCardText style={{color: "black"}}>
                 <br />
                 -AeroSpace & Defense Supplier
                 <br /> -COVID-19 Impacted Financial Performance
@@ -49,7 +49,7 @@ const RecentTransactions = () => {
               <MDBCardTitle className="black-text" tag="h5">
                 $3,500,000 for New Plastic Injection Molding Machine
               </MDBCardTitle>
-              <MDBCardText>
+              <MDBCardText style={{color: "black"}}>
                 <br />
                 -Recent Start-Up
                 <br />
@@ -71,7 +71,7 @@ const RecentTransactions = () => {
               <MDBCardTitle className="black-text" tag="h5">
                 $2,000,000 for Food Production Equipment
               </MDBCardTitle>
-              <MDBCardText>
+              <MDBCardText style={{color: "black"}}>
                 <br />
                 -Recent Acquisition
                 <br /> -Debt 6X EBITDA
