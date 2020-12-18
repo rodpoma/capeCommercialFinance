@@ -55,7 +55,8 @@
   width: 100%;
 }
 .cardText {
-  font-size: 0.87vw;
+  font-size: 1.3vw;
+  color: black;
 }
 .PEOB {
   max-width: 60vw;

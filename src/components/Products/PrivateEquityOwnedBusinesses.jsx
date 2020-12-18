@@ -18,7 +18,7 @@ const PrivateEquityOwnedBusinesses = () => {
           <MDBCard className="CardHeight">
             <MDBCardBody className="productCard">
               <MDBCardText>
-                <p className="cardText">
+                <p style={{fontSize: ".7vw", color: "black"}}>
                   As an <em>Independent</em> equipment finance company, our
                   focus is on supporting CAPEX needs for Private Equity
                   Owned/Sponsoered business and Privately held organizations. We
@@ -52,7 +52,7 @@ const PrivateEquityOwnedBusinesses = () => {
           <MDBCard className="CardHeight">
             <MDBCardBody className="productCard">
               <MDBCardText>
-                <p style={{fontSize: ".7vw"}}>
+                <p style={{fontSize: ".7vw", color: "black"}}>
                   Our typical direct customer is:
                   <ul>
                     <li>Highly leveraged</li>
