@@ -8,6 +8,8 @@ import {
   MDBCardGroup,
   MDBCardImage,
 } from "mdbreact";
+import Handshake from "../../assets/handshake.jpg";
+import Business from "../../assets/Business.JPG";
 
 const PrivateEquityOwnedBusinesses = () => {
   return (
@@ -33,7 +35,7 @@ const PrivateEquityOwnedBusinesses = () => {
           </MDBCard>
           <MDBCard className="CardHeight">
             <MDBCardImage
-              src="https://cdn.pixabay.com/photo/2014/09/10/17/29/handshake-440959_960_720.jpg"
+              src={Handshake}
               alt="Business Handshake"
               top
               overlay="white-slight"
@@ -43,7 +45,7 @@ const PrivateEquityOwnedBusinesses = () => {
         <MDBCardGroup>
           <MDBCard className="CardHeight">
             <MDBCardImage
-              src="https://cdn.pixabay.com/photo/2016/02/19/11/19/office-1209640_960_720.jpg"
+              src={Business}
               alt="Private Equity"
               top
               overlay="white-slight"

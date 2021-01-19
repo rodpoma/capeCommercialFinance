@@ -8,6 +8,7 @@ import {
   MDBCardGroup,
   MDBCardImage,
 } from "mdbreact";
+import Calc from "../../assets/Calculator.JPG";
 
 const VendorFinance = () => {
   return (
@@ -19,7 +20,7 @@ const VendorFinance = () => {
         <MDBCardGroup className="mt-1">
           <MDBCard>
             <MDBCardImage
-              src="https://cdn.pixabay.com/photo/2014/07/06/13/55/calculator-385506_960_720.jpg"
+              src={Calc}
               alt="Finance"
               top
               hover
