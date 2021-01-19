@@ -8,6 +8,7 @@ import {
   MDBCardGroup,
   MDBCardImage,
 } from "mdbreact";
+import Energy from "../../assets/energy.jpg";
 
 const EnergySolutions = () => {
   return (
@@ -17,7 +18,7 @@ const EnergySolutions = () => {
         <MDBCardGroup className="mt-1">
           <MDBCard>
             <MDBCardImage
-              src="http://spectrum.mit.edu/wp-content/uploads/flickr-cogen-plant.jpg"
+              src={Energy}
               alt="Energy Infrastructure"
               top
               hover
